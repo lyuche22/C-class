@@ -6,14 +6,14 @@
 
 class Gaussian
 {
-    // private variable declaration
+     // private variable declaration
     private:
         float mu, sigma2;
 
-    // public variable and function declarations
+     // public variable and function declarations
     public:
 
-    // constructor functions
+      // constructor functions
    Gaussian ();
    Gaussian (float, float);
 
@@ -42,7 +42,7 @@ Gaussian::Gaussian (float average, float sigma) {
     sigma2 = sigma;
 }
 
-// set function definitions
+     // set function definitions
 void Gaussian::setMu (float average) {
     mu = average;
 }
@@ -51,7 +51,7 @@ void Gaussian::setSigma2 (float sigma) {
     sigma2 = sigma;
 }
 
-// get function definitions
+     // get function definitions
 float Gaussian::getMu () {
     return mu;
 }
@@ -60,7 +60,7 @@ float Gaussian::getSigma2() {
     return sigma2;
 }
 
-// evaluate function definition
+     // evaluate function definition
 float Gaussian::evaluate(float x) {
     float coefficient;
     float exponential;
@@ -70,7 +70,7 @@ float Gaussian::evaluate(float x) {
     return coefficient * exponential;
 }
 
-// multiply function definition
+     // multiply function definition
 Gaussian Gaussian::multiply(Gaussian other) {
     float denominator;
     float numerator;
@@ -86,7 +86,7 @@ Gaussian Gaussian::multiply(Gaussian other) {
     return Gaussian(new_mu, new_var);
 }
 
-// add function definition
+     // add function definition
 Gaussian Gaussian::add(Gaussian other) {
 
     float new_mu;

@@ -2,8 +2,8 @@
      // course on Udacity
      // Gaussian class 
 
-// assign a vector C++
-//vector< vector<float> > grid (height, vector <float>(width ,0.0));
+     // assign a vector C++
+     //vector< vector<float> > grid (height, vector <float>(width ,0.0));
      
      
      
@@ -36,7 +36,7 @@ class Gaussian
   Gaussian add (Gaussian);
 };
 
-// constructor function definitions
+     // constructor function definitions
 Gaussian::Gaussian() {
     mu = 0;
     sigma2 = 1;    
@@ -70,9 +70,9 @@ float Gaussian::evaluate(float x) {
     float coefficient;
     float exponential;
 
-    coefficient = 1.0 / sqrt (2.0 * M_PI * sigma2);
-    exponential = exp ( pow (-0.5 * (x - mu), 2) / sigma2 );
-    return coefficient * exponential;
+   coefficient = 1.0 / sqrt (2.0 * M_PI * sigma2);
+   exponential = exp ( pow (-0.5 * (x - mu), 2) / sigma2 );
+   return coefficient * exponential;
 }
 
      // multiply function definition
@@ -94,11 +94,11 @@ Gaussian Gaussian::multiply(Gaussian other) {
      // add function definition
 Gaussian Gaussian::add(Gaussian other) {
 
-    float new_mu;
+   float new_mu;
     float new_sigma2;
 
-    new_mu = mu + other.getMu();
-    new_sigma2 = sigma2 + other.getSigma2();
+   new_mu = mu + other.getMu();
+   new_sigma2 = sigma2 + other.getSigma2();
 
-    return Gaussian(new_mu, new_sigma2);
+   return Gaussian(new_mu, new_sigma2);
 }

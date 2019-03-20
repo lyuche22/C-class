@@ -2,6 +2,11 @@
      // course on Udacity
      // Gaussian class 
 
+// assign a vector C++
+//vector< vector<float> > grid (height, vector <float>(width ,0.0));
+     
+     
+     
 #include <math.h>
 
 class Gaussian
